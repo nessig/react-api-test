@@ -3,7 +3,7 @@ module.exports = {
         "browser": true,
         "es6": true
     },
-    "extends": "eslint:recommended",
+    "extends": ["eslint:recommended", "plugin:react/recommended"],
     "installedESLint": true,
     "parserOptions": {
         "ecmaFeatures": {
@@ -16,6 +16,8 @@ module.exports = {
         "react"
     ],
     "rules": {
+        "react/jsx-uses-vars": 1,
+        "react/react-in-jsx-scope": 1,
         "indent": [
             "error",
             2
